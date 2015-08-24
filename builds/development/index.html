@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" ng-app="myApp">
 <head>
   <meta charset="UTF-8">
   <title>day #</title>
@@ -7,7 +7,15 @@
   <link rel="stylesheet" href="css/anotherstyle.css">
 </head>
 <body>
-
+  <div class="center" ng-controller="myController as myCtrl">
+    <div ng-repeat="test in myCtrl.testArray">
+      <div class="test{{test}}" ng-class="{darkBg:$index===4 || $index ===6}">
+        {{$index}}
+      </div>
+    </div>
+  </div>
 <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+<script src="js/lib/angular/angular.min.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>

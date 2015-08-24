@@ -34,3 +34,12 @@ pre.center{
     border: #F2773F solid;
 }
 
+.test1, .test2, .test3, .test4, .test5, .test6, .test7, .test8{
+    width: 200px;
+    height: 100px;
+    border: 1px solid;
+}
+
+.darkBg{
+    background: #000;
+}
